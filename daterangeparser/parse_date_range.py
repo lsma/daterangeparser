@@ -203,10 +203,10 @@ def create_parser():
     )
 
     # Possible separators
-    separator = oneOf("- -- to until through till untill \u2013 \u2014 ->", caseless=True)
+    separator = oneOf("- -- to until through till untill and \u2013 \u2014 ->", caseless=True)
 
     # Strings to completely ignore (whitespace ignored by default)
-    ignoreable_chars = oneOf(", from starting beginning of", caseless=True)
+    ignoreable_chars = oneOf(", from starting beginning of between", caseless=True)
 
     # Final putting together of everything
     daterange = (

@@ -61,6 +61,7 @@ class TestWorkingParsing(unittest.TestCase):
         ("26-29 Oct. 2009", "26/10/2009", "29/10/2009"),
         ("15th of December", "15/12/XXXX", None),
         ("from 10th till 11th of April", "10/4/XXXX", "11/4/XXXX"),
+        ("Between August 12st and 19th 1648", "1/8/1648", "9/8/1648"),
 
         # Ignoring of times
         ("14th July 1988 06:45", "14/7/1988", None),
